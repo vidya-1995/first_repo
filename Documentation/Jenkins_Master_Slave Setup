@@ -1,4 +1,7 @@
+Refer link: https://devopscube.com/setup-slaves-on-jenkins-2/
+====================================================================
 In Slave Server:
+
 1) Go to : sshd_Config (path: sudo vi /etc/ssh/sshd_config)
 2) enable PubkeyAuthentication: yes & PasswordAuthentication: yes
 3) Restart sshd : sudo systemctl restart sshd
@@ -22,6 +25,3 @@ ssh-copy-id username@pubIPaddress (2nd server/slave)
 ssh username@pubIP # to check password less conection 
 
 =====================
-
-
-https://devopscube.com/setup-slaves-on-jenkins-2/
