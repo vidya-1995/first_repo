@@ -1,3 +1,5 @@
+Reference URL: https://www.vultr.com/docs/install-sonarqube-on-ubuntu-20-04-lts/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=Cj0KCQjw6_CYBhDjARIsABnuSzqxaUEqviynu0WDnrtPE4GGhz_XnOgbXmpdj4SmJpZNxbzUGVGc6eYaAikZEALw_wcB
+
 1. Install OpenJDK 11:
 
 sudo apt-get install openjdk-11-jdk -y
