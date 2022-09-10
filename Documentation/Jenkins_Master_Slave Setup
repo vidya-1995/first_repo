@@ -25,3 +25,9 @@ ssh-copy-id username@pubIPaddress (2nd server/slave)
 ssh username@pubIP # to check password less conection 
 
 =====================
+
+Slave configuration:
+
+Dashboard -> manage jenkins > manage nodes and clouds > +new node > add node name > select permanent agent > create
+configuration file will open: 
+Then in "Remote root directory" : write the path "/home/<username of the slave>"
