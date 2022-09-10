@@ -1,7 +1,7 @@
 In Slave Server:
 1) Go to : sshd_Config (path: sudo vi /etc/ssh/sshd_config)
 2) enable PubkeyAuthentication: yes & PasswordAuthentication: yes
-3) Restart sshd by (sudo restart sshd)
+3) Restart sshd : sudo systemctl restart sshd
 
 IN Master:
 
