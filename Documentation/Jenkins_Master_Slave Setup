@@ -1,0 +1,26 @@
+In Slave Server:
+1) Go to : sshd_Config (path: sudo vi /etc/ssh/sshd_config)
+2) enable pubkeyAutountication: yes & password: yes
+3) Restart sshd by (sudo restart sshd)
+
+IN Master:
+1) ssh-keygen # to genarate Pub_key
+2) copy Pub_key (sudo cat .ssh/pub_key)
+
+In Slave:
+1) ssh-keygen # to genarate Aoutherised-key
+2) paste pub_key copyied from Master Server in Aoutherised-ke (sudo cat .ssh/Aoutherised-key)
+
+======================
+
+if you have Slave(user) password you can use copy-ID
+
+ssh-copy-ID username@pubIP
+
+ssh username@pubIP # to check password less conection 
+
+======================
+
+
+
+
