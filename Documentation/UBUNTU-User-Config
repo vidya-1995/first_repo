@@ -1,0 +1,20 @@
+
+To create and Switch User in UBUNTU:
+
+if you create new User in ubuntu, by defoult /Home directory is not created and if you try to switch to new User only "$" symbol is shown without /Home directory,
+so we need to configure for /Home directory by below 2 metohods: 
+
+In ubuntu, we need to configure below steps for the newly created user in the slave machine:
+****** Be as root user to perform below steps*****
+ sudo useradd -m <username>
+ usermod -aG sudo <username> // to add a user to the group
+ chsh -s /bin/bash <username> //to give a full bash permission to the user
+ -logout as root
+ -exit
+ -sudo su - <username>
+
+********** OR ***************** 
+use it with the single command
+ 
+sudo useradd -m -s $(which bash) -G sudo <USERNAME>
+Eg: sudo useradd -m -s /bin/bash -G sudo devops
