@@ -1,0 +1,2 @@
+1. Install "Sonarqube scanner" pluggin in the jenkins
+   Path: manage jenkins > manage pluggin > available > search for "Sonarqube scanner"
