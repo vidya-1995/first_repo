@@ -60,10 +60,11 @@ Here, "8081" was chosen but you can put another port available.
 In ubuntu, we need to configure below steps for the newly created user in the slave machine:
 ****** Be as root user to perform below steps*****
  sudo useradd -m <username>
- usermod -aG sudo <username>
- chsh -s /bin/bash <username>
+ usermod -aG sudo <username> // to add a user to the group
+ chsh -s /bin/bash <username> //to give a full bash permission to the user
  -logout as root
  -exit
  -sudo su - <username>
-  
+
+==================================================
  
