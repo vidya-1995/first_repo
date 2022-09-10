@@ -21,5 +21,7 @@ ssh-copy-id username@pubIPaddress (2nd server/slave)
 
 ssh username@pubIP # to check password less conection 
 
-======================
+=====================
 
+
+https://devopscube.com/setup-slaves-on-jenkins-2/
