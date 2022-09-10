@@ -1,2 +1,5 @@
 1. Install "Sonarqube scanner" pluggin in the jenkins
    Path: manage jenkins > manage pluggin > available > search for "Sonarqube scanner"
+   
+2. configure sonarqube with jenkins:
+   path: manage jenkins > configure system >  SonarQube servers > Name : > Server URL(http://13.214.43.2:9000/) > apply and save
