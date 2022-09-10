@@ -66,5 +66,8 @@ In ubuntu, we need to configure below steps for the newly created user in the sl
  -exit
  -sudo su - <username>
 
-==================================================
+OR***** use it with the single command
+ 
+ sudo useradd -m -s $(which bash) -G sudo <USERNAME>
+ Eg: sudo useradd -m -s /bin/bash -G sudo devops
  
