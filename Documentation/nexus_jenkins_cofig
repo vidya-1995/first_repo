@@ -1,0 +1,4 @@
+1. install plugin : Nexus Artifact Uploader
+path: manage jenkins > manage pluggins > available > Nexus Artifact Uploader > install without restart
+
+2. 
