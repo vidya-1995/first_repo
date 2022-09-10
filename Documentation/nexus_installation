@@ -2,14 +2,19 @@ Reference link: https://idroot.us/install-nexus-repository-ubuntu-20-04/
 YouTube link: https://www.youtube.com/watch?v=gq9i3Gqou6A
 
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
 sudo apt install openjdk-8-jre-headless  //install java
 java -version
+cd opt/
 sudo wget https://download.sonatype.com/nexus/3/nexus-3.41.1-01-unix.tar.gz
-//copy the above http url from Unix archive option under "https://help.sonatype.com/repomanager3/product-information/download"
+//copy the above http url from "Unix archive" option under "https://help.sonatype.com/repomanager3/product-information/download"
 sudo tar -zxvf nexus-3.41.1-01-unix.tar.gz  //unzip
-sudo mv /opt/nexus-3.41.1-01 /opt/nexus //rename
+sudo mv /opt/nexus-3.41.1-01 /opt/nexus  //rename
+sudo useradd -m -s /bin/bash -G sudo <nexus> or sudo useradd nexus //username:nexus
+sudo passwd nexus
+sudo visudo
+- add this under root: 
+nexus ALL=(ALL) NOPASSWD: ALL
 sudo chown -R nexus:nexus /opt/nexus
 sudo chown -R nexus:nexus /opt/sonatype-work
 sudo nano /opt/nexus/bin/nexus.rc
@@ -60,4 +65,3 @@ Accessing Nexus Repository Web Interface:  http://your-server-ip-address:8081
 To get a first time password :
 
 cat /opt/nexus/sonatype-work/nexus3/admin.password
-
