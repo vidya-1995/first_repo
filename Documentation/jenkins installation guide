@@ -57,12 +57,12 @@ Environment="JENKINS_PORT=8081"
 Here, "8081" was chosen but you can put another port available.
 ==================================================================================
 
-To Switch User in UBUNTU:
+To Create & Switch to User in UBUNTU:
 
-if you create new User in ubuntu, by defoult /Home directory is not created and if you try to switch to new User only "$" symbol is shown without /Home directory,
+if you create new User in ubuntu, by defoult /Home directory is not created and if you try to switch to new User only "$" symbol will shown without /Home directory,
 so we need to configure for /Home directory by below 2 metohods: 
 
-In ubuntu, we need to configure below steps for the newly created user in the slave machine:
+1) In ubuntu, we need to configure below steps for the newly created user in the slave machine:
 ****** Be as root user to perform below steps*****
  sudo useradd -m <username>
  usermod -aG sudo <username> // to add a user to the group
@@ -73,8 +73,8 @@ In ubuntu, we need to configure below steps for the newly created user in the sl
 
 ********** OR ***************** 
 use it with the single command
- 
-sudo useradd -m -s $(which bash) -G sudo <USERNAME>
+
+2) sudo useradd -m -s $(which bash) -G sudo <USERNAME>
 Eg: sudo useradd -m -s /bin/bash -G sudo devops
 
 ==================================================================================
